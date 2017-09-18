@@ -94,3 +94,11 @@ extern void panic_assert(const char *file, u32int line, const char *desc) {
 
 	for(;;);
 }
+
+int strlen(char *src) {
+	int i = 0;
+	while (*src++) {
+		++i;
+	}
+	return i;
+}
