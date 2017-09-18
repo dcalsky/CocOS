@@ -6,8 +6,8 @@
 megs: 32
 
 # filenameof ROM images
-romimage:file=/usr/local/share/bochs/BIOS-bochs-latest
-vgaromimage:file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+romimage:file=$BXSHARE/BIOS-bochs-latest
+vgaromimage:file=$BXSHARE/VGABIOS-lgpl-latest
 
 # which disk image will be used
 floppya: image=CocOS.img, status=inserted
@@ -22,4 +22,4 @@ log: bochsout.txt
 mouse: enabled=0
 
 # enable key mapping ,using US layout as default
-keyboard:keymap=/usr/local/share/bochs/keymaps/x11-pc-us.map
+keyboard:keymap=$BXSHARE/keymaps/x11-pc-us.map
