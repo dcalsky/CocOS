@@ -6,20 +6,21 @@ A toy operating system for the OS course in Tongji university
 - x86-32
 - grub-0.97
 
+# Preparation
+- recommended x86 operating system
+- install `bochs` `bochs-x` `gcc4.5`
+
 # Get started
 
-INSTALL **bochs** **bochs-x** **gcc4.5** FIRST
-Open your terminal in this folder
-
-`$ make clean`: do this to clean all .o and kernel files in src
-`$ make clean-initrd`: do this to clean-up initrd.img and mk-initrd
-`$ make mk-initrd`: do this if there is no initrd.img
-`$ make`: compile
-`$ make update`: do this if any change occurs
-`$ bash ./run_bochs.sh`
+1. `$ make clean`: do this to clean all .o and kernel files in src
+2. `$ make clean-initrd`: do this to clean-up initrd.img and mk-initrd
+3. `$ make mk-initrd`: do this if there is no initrd.img
+4. `$ make`: compile
+5. `$ make update`: do this if any change occurs
+6. `$ bash ./run_bochs.sh`
 
 
-# Situation possible to occur and fix：
+# Situation occurred possibly and solutions
 
 * Compilation error on make progress： Switch your current OS to 32bit
 
